@@ -1,5 +1,5 @@
 var mongoose=require('mongoose');
-mongoose.connect("mongodb+srv://adithya:adithya@cluster0.uisrftc.mongodb.net/new?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect(process.env.mongodb_url)
 .then(()=>{
     console.log("Connected to DB")
 })
